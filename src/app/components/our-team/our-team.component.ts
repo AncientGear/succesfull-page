@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TeamSerice, Team } from '../../services/team.service';
+import { TeamService, Team } from '../../services/team.service';
 
 @Component({
   selector: 'app-our-team',
@@ -9,7 +9,7 @@ import { TeamSerice, Team } from '../../services/team.service';
 export class OurTeamComponent implements OnInit {
   team: Team[] = [];
 
-  constructor(private teamService: TeamSerice) {
+  constructor(private teamService: TeamService) {
 
    }
 

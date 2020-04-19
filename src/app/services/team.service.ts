@@ -1,35 +1,35 @@
 import { Injectable } from '@angular/core';
 
 export interface Team{
-  nombre: string;
+  name: string;
   description: string;
   img: string;
-  edad: string;
+  age: string;
   technologies: string;
 }
 
 @Injectable()
-export class TeamSerice {
+export class TeamService {
   private team: Team[] = [
     {
-      nombre: 'Saul Israel Tzakum Ochoa',
+      name: 'Saul Israel Tzakum Ochoa',
       description: 'Web developer with knowlegde in MEAN stack',
       img: 'assets/img/aquaman.png',
-      edad: '21',
+      age: '21',
       technologies: 'JavaScript, Python, C++, MySql, PostgreSQL, MongoDB, Node JS, Express, Hapi, Flask, Java, HTML, CSS, Angular'
     },
     {
-      nombre: 'Juan Alberto López Ix',
+      name: 'Juan Alberto López Ix',
       description: 'Web developer with knowlegde in MEAN stack',
       img: 'assets/img/batman.png',
-      edad: '21',
-      technologies: 'JavaScript, Python, C++, MySql, PostgreSQL, MongoDB, Node JS, Express, Hapi, Flask, Java, HTML, CSS, PHP, Vue JSyqwerty'
+      age: '21',
+      technologies: 'JavaScript, Python, C++, MySql, PostgreSQL, MongoDB, Node JS, Express, Hapi, Flask, Java, HTML, CSS, PHP, Vue JS'
     },
     {
-      nombre: 'Angel Alejandro Ruiz May',
+      name: 'Angel Alejandro Ruiz May',
       description: 'Web developer with knowlegde in MEAN stack',
       img: 'assets/img/daredevil.png',
-      edad: '21',
+      age: '21',
       technologies: 'JavaScript, Python, C++, MySql, PostgreSQL, MongoDB, Node JS, Express, Angular, Java, HTML, CSS'
     }
   ];

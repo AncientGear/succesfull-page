@@ -1,1 +1,18 @@
-<p>our-team works!</p>
+<h1>Our <small>Members</small></h1>
+<hr/>
+<div class="card-columns row">
+  <div class="card animated fadeIn fast col-xs-12 col-sm-6 col-lg-4" *ngFor="let member of team">
+    <img [src]="member.img" class="card-img-top img-fluid" [alt]="">
+    <div class="card-block text" >
+      <h5 class="card-title">{{ member.name }}</h5>
+      <p class="card-text">{{ member.description }}</p>
+      <p class="card-text"><strong>Experience</strong></p>
+      <p class="card-text">{{ member.technologies }}</p>
+      <p class="card-text"><small class="text-muted">{{ member.age }} años</small></p>
+      <button type="button"  class="btn btn-outline-primary btn-block">
+        Ver más...
+      </button>
+      <!-- <a [routerLink]="['/heroe', i]" routerLinkActive="router-link-active"  href="#" class="btn btn-outline-primary">Ver más link...</a> -->
+    </div>
+  </div>
+</div>
